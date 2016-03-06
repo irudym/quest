@@ -1,0 +1,79 @@
+// Place all the styles related to the zodiac/stars controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@keyframes sign_animation {
+  0% {height: 230px; width: 210px; opacity: 0;}
+  25% {height: 345px; width: 315px; opacity: 1; left: -68px; top: -58px;}
+  50% {height: 391px; width: 357px; opacity: 0.5; left: -91px; top: -81px;}
+  90% {height: 460px; width: 420px; opacity: 0; left: -125px; top: -115px;}
+  100% {height: 230px; width: 210px; opacity: 0; top: 0px; left: 0px;}
+}
+
+.sign-animation {
+  animation-duration: 1s;
+  animation-name: sign_animation;
+}
+
+.sign {
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100% 100%;
+  width: 210px;
+  height: 230px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.pisces-sign {
+  background-image: image_url('zodiac/pisces-sign.png');
+}
+
+.aquarius-sign {
+  background-image: image_url('zodiac/aquarius-sign.png');
+}
+
+.gemini-sign {
+  background-image: image_url('zodiac/gemini-sign.png');
+}
+
+.capricorn-sign {
+  background-image: image_url('zodiac/capricorn-sign.png');
+}
+
+.sagittarius-sign {
+  background-image: image_url('zodiac/sagittarius-sign.png');
+}
+
+.aries-sign {
+  background-image: image_url('zodiac/aries-sign.png');
+}
+
+.taurus-sign {
+  background-image: image_url('zodiac/taurus-sign.png');
+}
+
+.virgo-sign {
+  background-image: image_url('zodiac/virgo-sign.png');
+}
+
+.scorpio-sign {
+  background-image: image_url('zodiac/scorpio-sign.png');
+}
+
+.libra-sign {
+  background-image: image_url('zodiac/libra-sign.png');
+}
+
+.leo-sign {
+  background-image: image_url('zodiac/leo-sign.png');
+}
+
+.cancer-sign {
+  background-image: image_url('zodiac/cancer-sign.png');
+}

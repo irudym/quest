@@ -1,0 +1,2 @@
+module Zodiac::StarsHelper
+end
