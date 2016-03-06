@@ -210,6 +210,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  net-ssh
   puma
   rails (= 4.2.4)
   sass-rails (~> 5.0)

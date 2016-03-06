@@ -1,5 +1,4 @@
-# config valid only for current version of Capistrano
-lock '3.4.0'
+
 
 set :application, 'quest'
 set :repo_url, 'git@github.com:irudym/quest.git'
@@ -27,6 +26,7 @@ set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
+
 
 ## Defaults:
 # set :scm,           :git
