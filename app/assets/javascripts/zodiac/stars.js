@@ -122,6 +122,11 @@ function documentReady() {
 
 }
 
+$.fn.preload = function() {
+    this.each(function() {
+       $('<img/>')[0].src = this;
+    });
+}
 
 $(document).ready(documentReady);
 $(document).on('page:load', documentReady);

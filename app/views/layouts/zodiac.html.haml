@@ -9,6 +9,11 @@
     = javascript_include_tag 'zodiac', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    :javascript
+      console.log("Preload background image")
+      //preload background image
+      $(["#{image_url('zodiac/zodiac.jpg')}"]).preload();
+
     .container
       .row
         .zodiac-width

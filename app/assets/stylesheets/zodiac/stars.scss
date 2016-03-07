@@ -79,12 +79,47 @@
 }
 
 
+
 .message-box {
-  position: fixed;
-  top: 10px;
-  width: 630px;
-  padding: 10px;
-  font-family: 'Octopus';
-  font-size: 18px;
-  letter-spacing: 1px;
+    position: fixed;
+    top: 10px;
+    width: 630px;
+    padding: 10px;
+    font-family: 'Octopus';
+    font-size: 28px;
+    letter-spacing: 1px;
 }
+
+@media (min-width: 1080px) {
+  .message-box {
+    position: fixed;
+    top: 10px;
+    width: 630px;
+    padding: 10px;
+    font-family: 'Octopus';
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+
+.circleBase {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.type1 {
+  width: 20px;
+  height: 20px;
+  background: #730E15;
+}
+
+
+.light-box {
+  position: relative;
+  width: 630px;
+  height: 200px;
+  left: -10px;
+}
+
+
