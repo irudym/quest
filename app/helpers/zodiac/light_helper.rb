@@ -1,0 +1,2 @@
+module Zodiac::LightHelper
+end

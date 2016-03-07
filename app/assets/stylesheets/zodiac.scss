@@ -8,6 +8,27 @@ body {
   background-color: #000000;
 }
 
+@font-face {
+  font-family: 'Simplifica';
+  src: font-url('simplifica.woff') format('woff'),
+      font-url('simplifica.eot') format('embedded-opentype'),
+      font-url('simplifica.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gidole';
+  src: font-url('gidole.eot') format('embedded-opentype'),
+  font-url('gidole.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Octopus';
+  src: font-url('Octopus_100.otf') format('embedded-opentype'),
+  font-url('octopus_100-webfont.woff') format('woff');
+}
+
+
+
 .zodiac-width {
   width: 630px;
   height: 1260px;

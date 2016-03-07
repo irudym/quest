@@ -3,6 +3,13 @@
 function documentReady() {
     console.log("script loaded");
 
+    function fadeScreen() {
+        console.log("Fade the screen");
+        $("html").fadeOut(1600, function() {
+            $(location).attr('href','/zodiac/light');
+        });
+    }
+
     //if l == 0 them moveTo else lineTo
     pisces = [{x:68, y: 71, l:0}, {x:70, y: 49, l:1}, {x: 61, y: 58, l:1}, {x: 68,y: 71, l:1}, {x: 50, y: 108,l:1}, {x:33, y:135,l:1}, {x: 18, y: 161, l:1},
         {x: 42, y: 149, l:1}, {x: 68, y: 138,l:1}, {x: 94, y: 142, l:1}, {x: 140, y: 140, l:1}, {x:162, y: 144, l:1}, {x:178, y: 138, l:1},
@@ -76,12 +83,14 @@ function documentReady() {
             opacity: 0
         }, 800, function() {
             $(this).hide();
+            //console.log("sign.attr.class: " + sign.attr('class'));
+            if(sign.attr('class') == 'gemini-sign sign') fadeScreen();
         })
     });
     }
 
     $(".constellation").click(function() {
-        console.log("click on: " + $(this).children().next().attr("id"));
+        //console.log("click on: " + $(this).children().next().attr("id"));
         var c = document.getElementById($(this).children().next().attr("id"));
         var ctx = c.getContext("2d");
 
@@ -107,6 +116,9 @@ function documentReady() {
         if(vertex) drawConstellation(c,vertex);
 
     });
+
+    //scroll to bottom
+    $("html, body").animate({ scrollTop: $(document).height() }, 4400);
 
 }
 

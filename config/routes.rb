@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+
   namespace :zodiac do
-  get 'stars/index'
+    get 'stars' => 'stars#index'
+    get 'light' => 'light#index'
   end
 
   get 'quest/enter'
