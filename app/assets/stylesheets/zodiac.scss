@@ -31,7 +31,7 @@ body {
 
 .zodiac-width {
   width: 630px;
-  height: 1260px;
+  height: 1600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -39,6 +39,20 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   color: white;
+}
+
+@media (min-width: 1090px) {
+  .zodiac-width {
+    width: 630px;
+    height: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: image_url('zodiac/zodiac.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: white;
+  }
 }
 
 @keyframes image_opacity {
