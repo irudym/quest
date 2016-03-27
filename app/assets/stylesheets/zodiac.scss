@@ -43,12 +43,12 @@ body {
 
 @media (min-width: 1090px) {
   .zodiac-width {
-    width: 630px;
-    height: 1260px;
+    width: 1200px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
 
-    background-image: image_url('zodiac/zodiac.jpg');
+    background-image: image_url('zodiac/zodiac-700.jpg');
     background-repeat: no-repeat;
     background-position: right top;
     color: white;
@@ -66,7 +66,7 @@ body {
 }
 
 .constellation {
-  width: 210px;
+  width: 200px;
   height: 230px;
   opacity: 0;
   animation-delay: 1s;

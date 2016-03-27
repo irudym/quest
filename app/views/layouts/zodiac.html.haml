@@ -12,8 +12,15 @@
     :javascript
       console.log("Preload background image")
       //preload background image
-      $(["#{image_url('zodiac/zodiac.jpg')}"]).preload();
+      $(["#{image_url('zodiac/zodiac-700.jpg')}"]).preload();
 
+      //preload zodiac symbols
+      $(["#{image_url('zodiac/aquarius-sign.jpg')}", "#{image_url('zodiac/aries-sign.jpg')}",
+        "#{image_url('zodiac/cancer-sign.jpg')}", "#{image_url('zodiac/capricorn-sign.jpg')}",
+        "#{image_url('zodiac/gemini-sign.jpg')}", "#{image_url('zodiac/leo-sign.jpg')}",
+        "#{image_url('zodiac/libra-sign.jpg')}", "#{image_url('zodiac/pisces-sign.jpg')}",
+        "#{image_url('zodiac/sagittarius-sign.jpg')}", "#{image_url('zodiac/scorpio-sign.jpg')}",
+        "#{image_url('zodiac/taurus-sign.jpg')}", "#{image_url('zodiac/virgo-sign.jpg')}"]).preload();
     .container
       .row
         .zodiac-width
