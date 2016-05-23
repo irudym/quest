@@ -41,6 +41,10 @@ body {
   color: white;
 }
 
+.message-box {
+  color: white;
+}
+
 @media (min-width: 1090px) {
   .zodiac-width {
     width: 1200px;
@@ -52,6 +56,10 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     color: white;
+  }
+
+  .message-box {
+    font-weight: 600;
   }
 }
 
