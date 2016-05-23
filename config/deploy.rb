@@ -3,7 +3,7 @@
 set :application, 'quest'
 set :repo_url, 'git@github.com:irudym/quest.git'
 
-server '52.91.22.229', port: 22, roles: [:web, :app, :db], primary: true
+server 'couppy.me', port: 22, roles: [:web, :app, :db], primary: true
 
 
 
