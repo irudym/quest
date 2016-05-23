@@ -1,6 +1,6 @@
 function drawDivCircle(element, x, y, color) {
     circle = $("<div class='circleBase type1'></div>");
-    circle.css({top: y, left: x, display: "none"});
+    circle.css({top: y, left: x, display: "none", background: color});
     element.append(circle);
     return circle;
 }
@@ -17,6 +17,9 @@ function drawString() {
         console.log("String of lights");
         //draw string of lights
 
+        var colors = ["#68AFC5", "#D0DFEF", "#EFEA86", "#F7CEE8"];
+
+
         width = $("#canvas").width();
         height = $("#canvas").height();
 
@@ -24,10 +27,13 @@ function drawString() {
         lights = 8;
         ctx = $("#canvas")[0].getContext('2d');
 
+        var light_count = 0;
 
         function drawBulbs(element, x, y) {
             if(x>630) return;
-            circle = drawDivCircle($("#canvas").parent(), x, getYsin(x)+10, "#AA3030");
+            console.log("Draw lihgt: " + light_count + " with color (" + light_count %4  + "): " + colors[light_count % 4]);
+            circle = drawDivCircle($("#canvas").parent(), x, getYsin(x)+10, colors[light_count % 4]);
+            light_count++;
             circle.fadeIn(800, function() {
                 new_x = x+(630/lights) *scale_f;
                 drawBulbs(element,new_x, getYsin(new_x));
